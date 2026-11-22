@@ -1,0 +1,20 @@
+/* =====================================================================
+   Einstellungen der PROD-Webseite
+   ---------------------------------------------------------------------
+   Diese Datei gehört nur zu PROD. Beim Übernehmen von TEST nach PROD
+   wird sie nicht kopiert: TEST hat eine eigene config.js.
+
+   API_URL: Web-App-Adresse aus dem Google Sheet «Hochzeit PL»
+            (dort Einstellung Umgebung = PROD).
+            Sie endet auf /exec. Nur zwischen die beiden geraden
+            Hochkommas einfügen: 'https://script.google.com/…/exec'
+            Leer lassen = Demo mit Platzhaltern. Für die Gäste muss hier die PROD-Adresse stehen.
+   NAME_1 / NAME_2: stehen auf dem Couvert und der Startseite,
+            bevor jemand den Gästecode eingegeben hat.
+   ===================================================================== */
+window.PL_CONFIG = {
+  UMGEBUNG: 'PROD',
+  API_URL: 'https://script.google.com/macros/s/AKfycbznkcWygpBDpeor1NQrj0dY6Us8JhTRdmpwG1phLkKagWShg74u8yz5275-jEUa1NejrQ/exec',
+  NAME_1: 'Pasquale',
+  NAME_2: 'Laura'
+};
